@@ -3,14 +3,72 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/shared/shared.css">
     <link rel="stylesheet" href="assets/main.css">
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/c2709405dd.js" crossorigin="anonymous"></script>
     <title>Password Generator</title>
-  </head>
-  <body>
 
-    <h1><span id="userAnsware"></span>20</h1>
-    <!-- Richiamo Script -->
-    <script src="script/main.js" charset="utf-8"></script>
+  </head>
+
+  <body class="u-montserrat">
+    <header>
+      <nav id="nav__container" class="u-mgbot-xl">
+        <div class="nav__logo">
+          <img src="img/pass_logo.png" alt="logo pass">
+        </div>
+
+        <div class="nav__selections">
+          <ul class="u-vanilla-list u-inline-block">
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Info</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div id="main__container">
+        <div class="hero u-padbot-xl u-text-center">
+          <h4 class="u-padtop-md">PASSWORD GENERATOR TOOL</h4>
+          <h1 class="u-padbot-s">Generate a secure password</h1>
+          <h3>Use our online password generator to instantly create a source, random password</h3>
+        </div>
+
+        <div class="box__password">
+          <div class="password__result u-relative">
+            <h1 class="result__text"><span id="userAnsware" class="result__text"></span>20</h1>
+            <!-- Richiamo Script -->
+            <script src="script/main.js" charset="utf-8"></script>
+          </div>
+        </div>
+
+        <div class="box__locked u-text-center u-padtop-xl u-padbot-s u-relative">
+          <img class="lock" src="img/locked.png" alt="lock">
+          <img class="notebook" src="img/notebook.png" alt="notebook">
+        </div>
+
+      </div>
+    </main>
+
+    <footer>
+      <div id="main__footer">
+        <h3 class="u-white u-padrx-s">Made by Andrea De Martino &#xa9;</h3>
+        <ul class= "u-vanilla-list u-inline-block">
+          <li><i class="fab fa-facebook-square u-white"></i></li>
+          <li><i class="fab fa-instagram u-white"></i></li>
+          <li><i class="fab fa-youtube u-white"></i></li>
+          <li><i class="fab fa-twitter u-white"></i></li>
+          <li><i class="fab fa-linkedin-in u-white"></i></li>
+        </ul>
+      </div>
+    </footer>
+
+
+
+
 
 
   </body>
